@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meilensteine der AHV</title>
+    <link rel="stylesheet" href="css/mvp.css">
+</head>
+<body>
+<main>
+    <header>
+        <h1>Meilensteine der AHV</h1>
+        <p>© 2022 / Author: Ihr Name</p>
+    </header>
+    <form action="#" th:action="@{/ahv}" method="post">
+        <h2>Was waren die Meilensteine der AHV?</h2>
+        <section>
+            <aside>
+                <img src="images/goodthingtime.jpg" width="200" alt="strom mix">
+            </aside>
+            <aside>
+                <label>Was geschah wann?</label>
+                <label>Drücken Sie die Jahreszahl</label>
+                <button type="submit" name="numberbutton" value="one">1925</button>
+                <button type="submit" name="numberbutton" value="two">1948</button>
+                <button type="submit" name="numberbutton" value="three">1995</button>
+                <button type="submit" name="numberbutton" value="four">2022</button>
+                <label th:Text="${eckstein}" />
+            </aside>
+        </section>
+    </form>
+</main>
+</body>
+</html>
